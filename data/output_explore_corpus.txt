@@ -1,0 +1,33 @@
+first corpus exploration for all metadata categories:
+
+Gattungslabel_ED_normalisiert    658
+Jahr_ED                          658
+Medientyp_ED                     658
+seriell                          294
+dtype: int64
+
+
+                         distrubtion of Gattungslabel_ED_normalisiert  distribution of Gattungslabel_ED_normalisiert (relative share)
+Novelle                                                           219                                           0.332827
+sonstige Prosaerzählung                                           155                                           0.235562
+Roman                                                             138                                           0.209726
+Erzählung                                                         107                                           0.162614
+Märchen                                                            39                                           0.059271
+
+
+
+
+                          distrubtion of Medientyp_ED  distribution of Medientyp_ED (relative share)
+Anthologie                                        181                                       0.275076
+selbst. Roman Buchdrucke                          132                                       0.200608
+Taschenbuch                                       131                                       0.199088
+Familienblatt                                      83                                       0.126140
+Journal                                            73                                       0.110942
+Werke                                              58                                       0.088146
+
+
+            distrubtion of seriell  distribution of seriell (relative share)
+False                          159                                  0.540816
+True                           113                                  0.384354
+vermutlich                      22                                  0.074830
+
