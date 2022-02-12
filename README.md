@@ -11,10 +11,17 @@ Code: In the code folder, a smple and short python scripts for getting a quick o
 
 References: 
 Biber, Douglas/Conrad, Susan/Reppen, Randi (1998): Introduction: Goals and Methods of the Corpus-based Approach (Chapter 1). In: Biber, Douglas/Conrad, Susan/Reppen, Randi (ed.): Corpus Linguistics. Investigating Language Structure and Use. Cambridge, S. 1–18.
+
 Jäger, G. (2003). Geschichte des deutschen Buchhandels im 19. und 20. Jahrhundert. Frankfurt am Main.
+
 Meyer, R. (1987). Novelle und Journal, I: Titel und Normen: Untersuchungen zur Terminologie der Journalprosa, zu ihren Tendenzen, Verhältnissen und Bedingungen. Stuttgart.
+
 Schöch, Christof (2017): Aufbau von Datensammlungen. In: Jannidis, Fotis/Kohle, Hubertus/Rehbein, Malte (ed.): Digital Humanities: eine Einführung. Stuttgart: J.B. Metzler Verlag. S. 223–233.
+
 Schröder, R. (1970). Novelle und Novellentheorie in der frühen Biedermeierzeit. Tübingen.
+
 Schröter, Julian (2019): Gattungsgeschichte und ihr Gattungsbegriff am Beispiel der Novellen. In: Journal of Literary Theory 13:2, S. 227–257.
+
 Wynne, Martin (ed.) (2004): Developing Linguistic Corpora: a Guide to Good Practice. Oxford.
+
 Zuber, M. (1955). Die deutschen Musenalmanache und schöngeistigen Taschenbücher des Biedermeier. 1815 – 1848. München.
