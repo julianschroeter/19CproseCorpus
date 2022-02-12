@@ -1,6 +1,4 @@
 # 19CproseCorpus
-This repository includes corpus data and scripts for corpus exploration.
-
 
 This repository provides a description, abstract feature representations (data), anonymous metadata (data), and python scripts (scripts, based on functions and classes in the preprocessing module) for an exploratory overview of a literary corpus that is currently constructed:
 
