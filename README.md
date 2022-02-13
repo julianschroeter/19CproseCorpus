@@ -12,7 +12,7 @@ Corpus data and feature representation: When the corpus is completed and when al
 
 Code: 
 
-In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. In this script functions and classes from the preprocessing module are used. The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 11 2022).
+In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. In this script functions and classes from the preprocessing module are used. The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 13 2022).
 
 References: 
 
