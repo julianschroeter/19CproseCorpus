@@ -4,6 +4,7 @@ from preprocessing.metadata_transformation import full_genre_labels
 from preprocessing.corpus import DocFeatureMatrix
 import pandas as pd
 
+# if the functions for setting the filepaths from the preprocessing.presetting module are used, the name of the Computer can be specified in thy "system" variable.
 system = "my_xps"
 
 # Skript ist erst im Aufbau
@@ -12,7 +13,7 @@ infile_name = os.path.join(global_corpus_raw_dtm_directory(system), "DTM_lemmati
 metadata_filepath= os.path.join(global_corpus_representation_directory(system), "metadata.csv") # set the filepath for the metadata.csv filepath (see data folder)
 
 # metadata categories to be added
-rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "seriell"]
+rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "seriell", "Gender"]
 
 # generate instance of a corpus object (see class DocFeatureMatrix in the preprocessing module)
 df_obj = DocFeatureMatrix(data_matrix_filepath=infile_name, metadata_csv_filepath= metadata_filepath)
@@ -20,7 +21,7 @@ df_obj = df_obj.add_metadata(rel_metadata)
 new_df_obj = df_obj.reduce_to(rel_metadata, return_eliminated_terms_list=False)
 
 # data can be reduced to selected genres
-new_df_obj = new_df_obj.reduce_to_categories(metadata_category="Gattungslabel_ED_normalisiert", label_list=["N", "E", "0E", "XE", "M", "R"])
+# new_df_obj = new_df_obj.reduce_to_categories(metadata_category="Gattungslabel_ED_normalisiert", label_list=["N", "E", "0E", "XE", "M", "R"])
 
 df = new_df_obj.data_matrix_df
 

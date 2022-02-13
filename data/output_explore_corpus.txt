@@ -31,3 +31,8 @@ False                          159                                  0.540816
 True                           113                                  0.384354
 vermutlich                      22                                  0.074830
 
+       distrubtion of Gender  distribution of Gender (relative share)
+m                            436                                 0.703226
+f                            142                                 0.229032
+unbekannt                     41                                 0.066129
+m                              1                                 0.001613
