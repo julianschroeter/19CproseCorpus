@@ -12,6 +12,9 @@ Data:
 
 Corpus data and feature representation: When the corpus is completed and when all metadata and annotations are collected, all texts that are not affected by copyright restrictions will be published as plain texts in this repository. Until then, only abstract feature representations such as document term matrices of the current state are accessible. Metadata: When the corpus is completed, all metadata will be publisehd. Until then, only anonymous metadata with informations about genre and medial context are accessible.
 
+Figures: 
+Figures that can be reproduced based on the python scripts in the code folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
+
 Code: 
 
 In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. In this script functions and classes from the preprocessing module are used. The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 13 2022).
