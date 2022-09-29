@@ -10,10 +10,10 @@ system = "my_xps"
 # Skript ist erst im Aufbau
 
 infile_name = os.path.join(global_corpus_raw_dtm_directory(system), "DTM_lemmatized_l2_5000mfw.csv") # set the filepath for the document-feature-matrix file (see data folder)
-metadata_filepath= os.path.join(global_corpus_representation_directory(system), "metadata.csv") # set the filepath for the metadata.csv filepath (see data folder)
+metadata_filepath= os.path.join(global_corpus_representation_directory(system), "Bibliographie.csv") # set the filepath for the metadata.csv filepath (see data folder)
 
 # metadata categories to be added
-rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "seriell", "Gender"]
+rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "Gender", "Kanon_Status"]
 
 # generate instance of a corpus object (see class DocFeatureMatrix in the preprocessing module)
 df_obj = DocFeatureMatrix(data_matrix_filepath=infile_name, metadata_csv_filepath= metadata_filepath)
