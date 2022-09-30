@@ -1,4 +1,4 @@
-system = "wcph113" #"my_mac" "my_xps"
+system = "my_xps" # "wcph113" #"my_mac" "my_xps"
 if system == "wcph113":
     import sys
     sys.path.append('/mnt/data/users/schroeter/PyNovellaHistory')
@@ -8,18 +8,18 @@ import os
 import matplotlib.pyplot as plt
 
 from preprocessing.corpus import DocFeatureMatrix
-from preprocessing.presetting import global_corpus_representation_directory, vocab_lists_dicts_directory, load_stoplist
+from preprocessing.presetting import global_corpus_representation_directory, vocab_lists_dicts_directory, load_stoplist, global_corpus_raw_dtm_directory, set_DistReading_directory
 from preprocessing.metadata_transformation import full_genre_labels, years_to_periods
 
 
 # infile_name = os.path.join(global_corpus_representation_directory(system), "DocThemesMatrix.csv")
-infile_name = os.path.join(global_corpus_representation_directory(system), "toponym_share_Matrix.csv")
+infile_name = os.path.join(global_corpus_raw_dtm_directory(system), "raw_dtm_l1_lemmatized_use_idf_False2500mfw.csv")
 metadata_filepath= os.path.join(global_corpus_representation_directory(system), "Bibliographie.csv")
 colors_list = load_stoplist(os.path.join(vocab_lists_dicts_directory(system), "my_colors.txt"))
 
 dtm_obj = DocFeatureMatrix(data_matrix_filepath=infile_name, metadata_csv_filepath= metadata_filepath)
 
-project_path = '/mnt/data/users/schroeter/PyNovellaHistory'
+project_path = set_DistReading_directory(system)
 
 dtm_obj = dtm_obj.add_metadata(["Gattungslabel_ED_normalisiert", "Nachname", "Titel", "Medium_ED", "Jahr_ED"])
 
@@ -29,7 +29,7 @@ dtm_obj = dtm_obj.reduce_to_categories("Gattungslabel_ED_normalisiert", cat_labe
 
 df = dtm_obj.data_matrix_df
 
-print(df)
+
 
 
 
@@ -45,6 +45,9 @@ df = full_genre_labels(df, replace_dict=replace_dict)
 
 corpus_statistics = df.groupby(["periods30a", "Gattungslabel_ED_normalisiert"]).size()
 df_corpus_statistics = pd.DataFrame(corpus_statistics)
+
+print(df_corpus_statistics)
+
 df_corpus_statistics.unstack().plot(kind='bar', stacked=False, title= "Corpus Size for Genres and Periods",
                                     color=["green", "orange", "red", "blue", "grey"])
 plt.xticks(rotation=45)
