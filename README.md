@@ -1,6 +1,11 @@
 # 19CproseCorpus
 
-This repository provides a description, abstract feature representations (data), anonymous metadata (data), and python scripts (scripts, based on functions and classes in the preprocessing module) for an exploratory overview of a literary corpus that is currently constructed:
+This repository provides a description, abstract feature representations (data), anonymous metadata (data), and python scripts (scripts, based on functions and classes in the preprocessing module) for an exploratory overview of a literary corpus that is currently constructed.
+
+If you want to cite or use this corpus, please refer to:
+Schröter, Julian, Johannes Leitgeb, and Theresa Valta. "Ein digitales Korpus der Novellen und Journalprosa des 19. Jahrhunderts: Herausforderungen der Metadatenerschließung." DARIAH-DE Working Papers ​46, ​DARIAH-DE, ​Göttingen, 2023, doi: https://doi.org/10.47952/gro-publ-131. 
+
+
 
 Description: 
 
