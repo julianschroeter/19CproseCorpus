@@ -18,7 +18,7 @@ def set_DistReading_directory(system_name):
     if system_name == "my_mac":
         return "/Users/karolineschroter/Spaces/DistReading"
     elif system_name == "my_xps":
-        return "/home/julian/Spaces/DistReading"
+        return "/home/julian/Documents/DistReading/"
     elif system_name == "wcph104":
         return os.path.join( "C:" + os.sep, "Users", "jus71hy", "Documents", "Spaces", "DistReading")
         pass

@@ -13,7 +13,7 @@ infile_name = os.path.join(global_corpus_raw_dtm_directory(system), "raw_dtm_l1_
 metadata_filepath= os.path.join(global_corpus_representation_directory(system), "Bibliographie.csv") # set the filepath for the metadata.csv filepath (see data folder)
 
 # metadata categories to be added
-rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "Gender", "Kanon_Status"]
+rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "Gender", "Kanon_Status", "seriell"]
 
 # generate instance of a corpus object (see class DocFeatureMatrix in the preprocessing module)
 df_obj = DocFeatureMatrix(data_matrix_filepath=infile_name, metadata_csv_filepath= metadata_filepath)
