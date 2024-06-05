@@ -16,6 +16,7 @@ The project has been constructed by Julian Schröter (project lead), Theresa Val
 Data: 
 
 Corpus data and feature representation: When the project (Habilitation) is being completed and when all metadata and annotations are collected, all texts that are not affected by copyright restrictions will be published as plain texts in this repository. Until then, only abstract feature representations such as document term matrices of the current state are accessible. Metadata: When the corpus is completed, all metadata will be publisehd. Until then, only anonymous metadata with informations about genre and medial context are accessible.
+The corpus representation as a document matrix is recorded with two development states, May 2022 and May 2024.
 
 Figures: 
 
