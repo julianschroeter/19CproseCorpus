@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Schröter
+  given-names: Julian
+orcid: https://orcid.org/0000-0003-0168-2608
+title:julianschroeter/19CproseCorpus: 19th Century Prose Corpus (Habilitationsschrift)
+version: 1.1.0
+date-released: 2024-04-06
