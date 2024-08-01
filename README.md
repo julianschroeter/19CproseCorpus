@@ -31,6 +31,16 @@ roughly 800 German manifestations of narrative prose fiction between 1770 and 19
 
 ![Basic_corpus_characteristcs](https://github.com/user-attachments/assets/6121af6b-92c8-4ca5-89b2-11d3fdd2cbec)
 
+![corpus_characteristic_gender](https://github.com/user-attachments/assets/ea5b666b-2703-476d-8f18-f776ddc23371)
+
+Canonicity:
+
+|---| absolute | relative | estimated population |
+|0 (not part of the canon)| 452 | 0.66 | > 0.85 |
+|1  (weakly canonized) | 71 |0.1 | 0.34 | <0,15 |
+|2 (medium) | 83 | 0.12 | ---|
+|3 (high canon) | 81 | 0,12 |---|
+
 
 
 References: 
