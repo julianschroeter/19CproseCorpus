@@ -36,8 +36,9 @@ roughly 800 German manifestations of narrative prose fiction between 1770 and 19
 Canonicity:
 
 |---| absolute | relative | estimated population |
+|---|---|---|---|
 |0 (not part of the canon)| 452 | 0.66 | > 0.85 |
-|1  (weakly canonized) | 71 |0.1 | 0.34 | <0,15 |
+|1  (weakly canonized) | 71 |0.1 | ––– |
 |2 (medium) | 83 | 0.12 | ---|
 |3 (high canon) | 81 | 0,12 |---|
 
