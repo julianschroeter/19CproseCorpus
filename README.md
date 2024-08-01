@@ -26,7 +26,7 @@ Code:
 
 In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. In this script functions and classes from the preprocessing module are used. The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 13 2022).
 
-Basic characteristics of the corpus:
+Basic characteristics of the corpus (date: May 2023):
 roughly 800 German manifestations of narrative prose fiction between 1770 and 1940 with a focus on the period between 1820 and 1880.
 
 ![Basic_corpus_characteristcs](https://github.com/user-attachments/assets/6121af6b-92c8-4ca5-89b2-11d3fdd2cbec)
