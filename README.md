@@ -7,22 +7,40 @@ Schröter, Julian, Johannes Leitgeb, and Theresa Valta. "Ein digitales Korpus de
 
 
 
-Description: 
+## Description: 
 
-The project corpus has been constructed between 2018 to 2022. It is currently supplemented by the systematically relevant dimension of seriality. What is important and new to this corpus is that it consists up to 30 percent of journal prose fiction texts that have not yet been discussed in literary studies. The texts have been digitized during a preceding post-doctoral project (Habilitation) with the title “Ästhetische und soziale Funktionen der Erzählungen und Novellen im 19. Jahrhundert ("Towards a functional history of nineteenth-century German novellas"). The python code for this project will soon be published in the PyNovellaHistory GitHub repository. The digitization process was funded by the research fund of the Philosophical Faculty of the University of Würzburg. The corpus includes information concerning genre, medial history and seriality. The corpus design meets criteria of balance and representativeness according to Biber et al 1998, Wynne 2014, Percillier 2017, and Schöch 2017). (1) Canonized texts are not over-represented, and (2) serial and non-serial narrative texts are balanced. The corpus meets – besides the requirements of balance and representativeness – an important further requirement that I developed in Schröter (2019), namely that genre assignments shall be representative of the historical situation in the media market. This design facilitates addressing research issues as historiographical questions more comprehensively than existing computational genre stylistics. The construction of the corpus was preceded by sighting all research in the media market of the 19th century (Zuber 1955; Schröder 1970; Meyer 1987; Jäger 2003. Based on qualitative analysis, cluster samples, stratified samples and random samples from clusters have been drawn. Besides the requirements of balance and representativeness, the corpus meets an important further requirement that I developed in (Gattungsgeschichte und ihr Gattungsbegriff am Beispiel der Novellen. In: Journal of Literary Theory 13:2 2019, 227–257). Genre assignments shall be representative of the historical situation in the media market. This entails that each text can have different genre assignments in different historical situations. Based on this structure of metadata collection, semantic change of genre concepts as well as historical processes of canonization can be investigated. 
+The project corpus has been constructed between 2018 to 2022. 
+Since 2023, it has been supplemented by the systematically relevant dimension of seriality. 
+What is important and new to this corpus is that it consists up to 30 percent of journal prose fiction texts that have not yet been discussed in literary studies. 
+The texts have been digitized during a preceding post-doctoral project (Habilitation) with the title 
+“Gattung – Medium – Politik: Eine quantitative Geschichte der Novelle im 19. Jahrhundert"). 
+The python code for this project is published in the PyNovellaHistory GitHub repository (https://github.com/julianschroeter/PyNovellaHistory). 
+The digitization process (2018–2020) was funded by the research fund of the Philosophical Faculty of the University of Würzburg.
+The corpus includes information concerning genre, medial history and seriality. 
+The corpus design meets criteria of balance and representativeness according to Biber et al. 1998, Wynne 2014, Percillier 2017, and Schöch 2017). 
+(1) Canonized texts are not over-represented, and 
+(2) serial and non-serial narrative texts are balanced. 
+The corpus meets – besides the requirements of balance and representativeness – an important further requirement that was developed in Schröter (2019), 
+namely that genre assignments shall be representative of the historical situation in the media market. 
+This design facilitates addressing research issues as historiographical questions more comprehensively than existing computational genre stylistics. 
+The construction of the corpus was preceded by sighting all research in the media market of the 19th century (Zuber 1955; Schröder 1970; Meyer 1987; Jäger 2003. Based on qualitative analysis, cluster samples, stratified samples and random samples from clusters have been drawn. Besides the requirements of balance and representativeness, the corpus meets an important further requirement that I developed in (Gattungsgeschichte und ihr Gattungsbegriff am Beispiel der Novellen. In: Journal of Literary Theory 13:2 2019, 227–257). Genre assignments shall be representative of the historical situation in the media market. This entails that each text can have different genre assignments in different historical situations. Based on this structure of metadata collection, semantic change of genre concepts as well as historical processes of canonization can be investigated. 
 
 The project has been constructed by Julian Schröter (project lead), Theresa Valta (student assistant from 2018 through 2022), Johannes Leitgeb (student assistant since 2018, Martin Ruhl (student assistant since 2022), Franziska Danner (student assistant since 2023), and Jana Grimm (student assistant since April 2024).
-
-Data: 
+## Data 
 
 Corpus data and feature representation: When the project (Habilitation) is being completed and when all metadata and annotations are collected, all texts that are not affected by copyright restrictions will be published as plain texts in this repository. Until then, only abstract feature representations such as document term matrices of the current state are accessible. Metadata: When the corpus is completed, all metadata will be publisehd. Until then, only anonymous metadata with informations about genre and medial context are accessible.
-The corpus representation as a document matrix is recorded with two development states, May 2022 and May 2024.
 
-Figures: 
+Corpus data and feature representation: When the project (Habilitation) is being completed and when all metadata and annotations are collected, all texts that are not affected by copyright restrictions will be published as plain texts in this repository. Until then, only abstract feature representations such as document term matrices of the current state are accessible. Metadata: When the corpus is completed, all metadata will be publisehd. Until then, only anonymous metadata with informations about genre and medial context are accessible.
+The corpus representation as a document matrix is recorded with three development states: 
+- May 2022 (corpus size n = 714 works)
+- May 2024 (n = 788 works )
+- to be included December 2024 (n = 18.940 works) = Gartenlaube-Expansion based on sub project: GartenlaubeExtractor (Jana Grimm)
+ 
+## Figures 
 
 Figures that can be reproduced based on the python scripts in the code folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
 
-Code: 
+## Code 
 
 In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. In this script functions and classes from the preprocessing module are used. The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 13 2022).
 
