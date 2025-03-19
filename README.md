@@ -2,7 +2,7 @@
 ## General remarks
 This repository contains the `19CproseCorpus`, a collection of 19th century narrative prose and novellas that provides balanced samples of serially and non-serially published texts from all major contemporary media formats.  
 The repository provides: 
-- a description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures_and_output` folder),
+- a description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures` folder),
 - document-term matrices `dtm` of the corpus according to different corpus releases (in the `data/dtm` folder), 
 - a set of metadata on the historical context (in the `Bibliographie.csv` file), 
 - Python scripts allowing for an exploratory overview of the corpus (in the `code` folder.
