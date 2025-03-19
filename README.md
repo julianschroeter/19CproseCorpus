@@ -6,6 +6,7 @@ The repository provides:
 All figures can be reproduced based on the python scripts in the `code` folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
 The output_explore_corpus.txt file in the data folder records the actual output of the script ´explore_corpus.py` (date: XX.03.2025).
 - Python scripts allowing for an exploratory overview of the corpus (in the `code` folder. The scripts use functions and classes from the ´preprocessing´ module. 
+For using the scripts see section on `Usage` below. 
 - Document-term matrices `dtm` of the corpus according to different corpus releases (in the `data/dtm` folder). 
 - A metadata table including a wide range of media-historical context (`Bibliographie.csv`). 
 
@@ -171,7 +172,8 @@ Table 5: Canonicity
 |2 (medium) | 83 | 0.12 | –––|
 |3 (high canon) | 81 | 0,12 |–––|
 
-
+# Usage: CLI
+Here are the instructions for the CLI.
 
 # References 
 
