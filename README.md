@@ -25,7 +25,7 @@ The corpus has been constructed in two major phases:
 The digitization process  was funded by the research fund of the Philosophical Faculty of the University of Würzburg.
 What is important and new to this corpus is that it consists up to 30 percent of journal prose fiction texts that have not yet been discussed in literary studies. 
 In this phase, the data basis for the habilitation thesis (see above) was established. The construction of the corpus was preceded by sighting all research in the media market of the 19th century (Zuber 1955; Schröder 1970; Meyer 1987; Jäger 2003. Based on qualitative analysis, cluster samples, stratified samples and random samples from clusters have been drawn.
-   See versions v.1.0.0 in section `Release notes` below and Schröter/Leitgeb Valta (2023).
+   See version v.1.0.0 in section `Release notes` below and Schröter/Leitgeb Valta (2023).
 2. Seriality and the cliffhanger: In the second phase (2023–2025), the existing corpus has been extended in order to facilitate empirical studies on the interdependency between suspense and seriality.
 During this phase, the phase the corpus expansion has been funded by the Vogel-Stiftung Würzburg (Schröter 2024b).
    See version v.2.0.0 in `Release notes` below. For this phase, it was essential to cover samples from the fields of popular suspenseful narration from the different market sectors and media formats including serial and non-serial publication.
@@ -85,10 +85,10 @@ A significant expansion of the corpus compared to existing collections lies on t
 (see criteria for balanced samples above), and on the other hand in the collection of a broader basis of media-historical metadata.
 
 All metadata on the level of the documents are stored in the Bibliographie.csv (in the `data` folder). The following metadata were collected for all texts:
-- `Nachname` (last name): The author's surname ("o.N" if unknown).
-- `Vorname` (first name): The author's name ("o.N." if unknown).
+- `Nachname` (last name): The author's surname (`o.N` if unknown).
+- `Vorname` (first name): The author's name (`o.N.` if unknown).
 - `Pseudonym` (alias): if given, indicated as in the accessed manifestation of the work. 
-- `Gender`: The author's known gender (f=female, m=male,unbekannt=unknown).
+- `Gender`: The author's known gender (`f`=female, `m`=male, `unbekannt`= unknown).
 - `Titel` (title): Title as given in the accessed manifestation of the work.
 - `Untertitel_im_Text` (subtitle in text): Subtitle as given in the accessed manifestation of the work (empty if not given).
 - `Untertitel_im_Inhaltsverzeichnis` (subtitle in table of contents): Subtitle as given in the table of contents, if the work was published in an anthology or journal including a table (empty if not given).
@@ -111,8 +111,8 @@ The exact criteria are described below.
 - `seriell`: `True` (Bool) if the manifestation of the work was published in at lease two episodes, `False` if published as a whole.
 - `Seiten` (pages): Pages of the printed manifestation in the `Medium_ED`.
 - `Medium_Zweitdruck` (Medium of second publication): Medium of a subsequent publication of the work; empty if not given.
-- `Jahr_Zweidruck` (Year of second publication); empty if not given.
-- `Label_Zweidruck` (Genre label of the second publication); empty if not given.
+- `Jahr_Zweitdruck` (Year of second publication); empty if not given.
+- `Label_Zweitdruck` (Genre label of the second publication); empty if not given.
 - `Medium_Drittdruck` (Medium of third publication)
 - `Jahr_Drittdruck` (Year of third publication); empty if not given.
 - `Label_Drittdruck` (Genre label of third publication); empty if not given.
@@ -122,25 +122,14 @@ The exact criteria are described below.
 - `in_B-v-Wiese`: `True` if in the collection "Die deutsche Novelle von Goethe bis Kafka" (ed. by B. v. Wiese), otherwise `False`
 
 - Structural and administrative metadata:
-  - `Dokument ID`: Identification number of each document. The first 6 digits (XXXXXX-00) refer to the work, the last two digits (000000-XX) refer to the episode. For the whole text, the last two digits are (-00).
+  - `Dokument ID`: Identification number of each document. The first 6 digits (XXXXXX-00) refer to the work, the last two digits (000000-XX) refer to episode numbers. For the whole text, the last two digits are (-00).
   - `Verantwortlich_Erfassung`: Name of the processor of the data record
   - `Source repository`: Name of the source repository, empty if the text was not retrieved from an existing digital text collection
   - `Bearbeitungsqualität`: Quality of the digitized text: `normalisiert`, `unknown`, `niedrig_digital`, `original`, `niedrig_original`, otherwise empty.
   - `spätere_Fassung_von`: If there is a former variant ("Fassung") of the work in the corpus, the `Dokument ID` of the former work manifestation is given; otherwise empty.
   - `UrhGeschBis`: Year until the expiry of copyright protection under German copyright law.
   - `falls_Episode_als_Ganztext_erfasst`: `True`if a work that consists of several episodes could only be documented as a whole text, otherwise `False`.
-  
-## Structure of the repository
-- `Figures`: 
-  - 
-  - The figures are stored in the `figures` folder. 
-- `Code`: 
-  - In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. 
-  - 
-  - 
-- `Data`:
-  - The Bibliographie.csv with all metadata on the level of work manifestations and episodes.
-  - The `dtm` folder containing the document term matrices as the textual corpus representation .
+ 
 
 ## Corpus composition
 
