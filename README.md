@@ -2,10 +2,14 @@
 ## General remarks
 This repository contains the `19CproseCorpus`, a collection of 19th century narrative prose and novellas that provides balanced samples of serially and non-serially published texts from all major contemporary media formats.  
 The repository provides: 
-- a description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures` folder),
-- document-term matrices `dtm` of the corpus according to different corpus releases (in the `data/dtm` folder), 
-- a set of metadata on the historical context (in the `Bibliographie.csv` file), 
-- Python scripts allowing for an exploratory overview of the corpus (in the `code` folder.
+- A description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures` folder).
+All figures can be reproduced based on the python scripts in the `code` folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
+The output_explore_corpus.txt file in the data folder records the actual output of the script ´explore_corpus.py` (date: XX.03.2025).
+- Python scripts allowing for an exploratory overview of the corpus (in the `code` folder. The scripts use functions and classes from the ´preprocessing´ module. 
+- Document-term matrices `dtm` of the corpus according to different corpus releases (in the `data/dtm` folder). 
+- A metadata table including a wide range of media-historical context (`Bibliographie.csv`). 
+
+
 
 ## Corpus description
 
@@ -128,15 +132,15 @@ The exact criteria are described below.
   
 ## Structure of the repository
 - `Figures`: 
-  - Figures that can be reproduced based on the python scripts in the code folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
+  - 
   - The figures are stored in the `figures` folder. 
 - `Code`: 
   - In the code folder, a smple and short python scripts for getting a quick overview over the corpus can be found. 
-  - In this script functions and classes from the preprocessing module are used. 
-  - The output_explore_corpus.txt file in the data folder records the properties of the corpus (date: Feb 13 2022).
+  - 
+  - 
 - `Data`:
   - The Bibliographie.csv with all metadata on the level of work manifestations and episodes.
-  - The `dtm` folder containing the document term matrices as the textual corpus representation (including an archive of earlier corpus releases).
+  - The `dtm` folder containing the document term matrices as the textual corpus representation .
 
 ## Corpus composition
 
