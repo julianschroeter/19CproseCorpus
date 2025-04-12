@@ -137,11 +137,11 @@ The exact criteria are described below.
 The composition of the corpus regarding the size and proportions of the samples regarding the essential categories of genre, seriality, and mediality are 
 shown in tables X-X:
 
-![Basic_corpus_characteristcs](https://github.com/user-attachments/assets/6121af6b-92c8-4ca5-89b2-11d3fdd2cbec)
+![Basic_corpus_characteristcs](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Genres_and_Periods.svg)
 
 Figure 1 shows the subsample sizes for each media format across subperiods, with the main periods from 1820–1850 and 1850–1880.
 
-![](/figures/former_releases/May2024/en_Corpus_Size_for_Media_types_and_Periods.svg "Media Types")
+![](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Media_types_and_Periods.svg "Media Types")
 
 Figure 1
 
@@ -151,8 +151,8 @@ Figure 2 shows the sumsample sizes for serially and non-serially published prose
 
 
 Figure 3 shows the subsample sizes for each genre across subperiods as in Figure 1.
+![](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Genres_and_Periods.svg "Numbers of works for genres and subperiods")
 
-![Fig 1](/figures/former_releases/May2024/en_Corpus_Size_for_Genres_and_Periods.svg)
 
 Figure 3
 
@@ -172,8 +172,19 @@ Table 5: Canonicity
 |2 (medium) | 83 | 0.12 | –––|
 |3 (high canon) | 81 | 0,12 |–––|
 
+
+# Level of Episodes
+
+|Medientyp_ED |Count    |Proportion|
+|-------------|---------|----------|
+|Familienblatt|3261     |0.836%    |
+|Journal      |70       |0.018%    |
+|Kolportage   |563      |0.144%    |
+|**Total**    |**3894** |          |
+
+
 # Usage: CLI
-Here are the instructions for the CLI.
+Here are the instructions for the CLI. (under construction).
 
 # References 
 

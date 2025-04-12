@@ -13,18 +13,18 @@ import spacy
 def set_DistReading_directory(system_name):
     """
        :param system_name: "my_mac", "my_xps", or "wcph104". Here, the respective Computer system with its respective directory structure has to be selected"
-       :return: the path for the the DistReading directory in Spaces (common cloud for all systems)
+       :return: the path for the the DistReading directory in Documents (common cloud for all systems)
     """
     if system_name == "my_mac":
-        return "/Users/karolineschroter/Spaces/DistReading"
+        return "/Users/karolineschroter/Documents/DistReading"
     elif system_name == "my_xps":
-        return "/home/julian/Documents/DistReading/"
+        return "/home/julian/Documents/DistReading"
     elif system_name == "wcph104":
-        return os.path.join( "C:" + os.sep, "Users", "jus71hy", "Documents", "Spaces", "DistReading")
+        return os.path.join( "C:" + os.sep, "Users", "jus71hy", "Documents", "Documents", "DistReading")
         pass
     else:
         print("Warning: The file system has not been specified correctly! Filepath is set to my_xps per default")
-        return "/home/julian/Spaces/DistReading"
+        return "/home/julian/Documents/DistReading"
 
 
 def set_system_data_directory(system_name):
@@ -58,6 +58,9 @@ def global_corpus_directory(system_name, test=False):
     :return: the path for the directory with all plain text files of the project corpus for the system specified with the parameter
     """
     if test == False:
+        if system_name == "my_xps":
+            return "/home/julian/git/PyNovellaHistory/data/corpus_all"
+        else:
             return os.path.join(set_system_data_directory(system_name), "novella_corpus_all")
     elif test == True:
             return os.path.join(set_system_data_directory(system_name), "novella_corpus_test")
@@ -69,6 +72,8 @@ def global_corpus_representation_directory(system_name):
         """
     if system_name == "wcph113":
         return os.path.join(set_system_data_directory(system_name), "novella_corpus_representation")
+    elif system_name == "my_xps":
+        return "/home/julian/git/19CproseCorpus/data/corpus_representation"
     else:
         return os.path.join(set_system_data_directory(system_name), "novella_corpus_representation")
 
@@ -78,7 +83,10 @@ def global_corpus_raw_dtm_directory(system_name):
         :param system_name: Here, the respective Computer system with its respective directory structure has to be selected"
         :return: the path for the directory to store all corpus representation files such as dtms or lists for the system specified with the parameter
         """
-    return os.path.join(set_system_data_directory(system_name), "novella_corpus_representation", "raw_dtm")
+    if system_name == "my_xps":
+        return "/home/julian/git/PyNovellaHistory/data/corpus_representation/raw_dtm"
+    else:
+        return os.path.join(set_system_data_directory(system_name), "novella_corpus_representation", "raw_dtm")
 
 
 def vocab_lists_dicts_directory(system_name):
@@ -100,6 +108,17 @@ def language_model_path(system_name):
     return path
 
 
+def conll_base_directory(system_name):
+    """
+    :param system_name: "my_mac", "my_xps", or "my_WindowsPC. Here, the respective Computer system with its respective directory structure has to be selected"
+    :return: the path for the directory to store all vocab lists, dictionaries such as translation tables, stopword-lists etc
+    """
+    if system_name == "wcph113":
+        return "/mnt/data/users/schroeter/llpro_testing/files/out"
+    else:
+        return "/mnt/data/users/schroeter/llpro_testing/files/out"
+
+
 """
 2. Load preprocessing files such as stop word lists etc.
 """
@@ -110,7 +129,7 @@ def load_stoplist(filepath):
     :param filepath: the input file should be plain text file. Terms should be separated by \n
     :return: a list of lower cased comma separated terms that can be used as elimination or reduction list
     """
-    with open(filepath, "r", encoding="utf8") as infile:
+    with open(filepath, "r", encoding="utf-8") as infile:
         text = infile.read()
     stopword_list = list(map(str, list(text.split("\n"))))
     stopword_list = [x for x in stopword_list if x]
@@ -138,7 +157,7 @@ def save_stoplist(stopword_list, outfilepath):
     :return: stopword file as txt file in outfilepath with items separated by \n,
     """
     text = '\n'.join(map(str, stopword_list))
-    with open(outfilepath, "w", encoding="utf8") as outfile:
+    with open(outfilepath, "w", encoding="utf-8") as outfile:
         outfile.write(text)
 
 
@@ -151,8 +170,8 @@ def word_translate_table_to_dict(infile_path, also_lower_case=True):
     normalization_dict = {}
     normalization_lower_dict = {}
     for line in normalization_table.splitlines():
-
-        old, new = line.split(", ")
+        print(line)
+        old, new = line.split(",")
         normalization_dict[old] = new
         old_lower = old.lower()
         new_lower = new.lower()
