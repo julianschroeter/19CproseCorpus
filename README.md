@@ -163,10 +163,10 @@ Figures 5 and 6 show the corpus composition on the level of episodes.
 Table 1 
 |seriality|number|relative share|
 |-------|----------------------|----------------------------------------|
-|non-serial|698                   |0.5517786561264822                      |
-|serial  |563                   |0.4450592885375494                      |
+|non-serial|698                   |0.551%                 |
+|serial  |563                   |0.445%                      |
 |as episodes in the corpus|421 out of 563   |-   |
-|unknown|4                     |                   |
+|unknown|4                     |  -                 |
 
 The corpus is thus balanced between texts that were published serially and non-serially.
 
@@ -187,15 +187,15 @@ The total of 3894 spreads across the different genres as shown in Figure 5 and t
 Table 3: The numbers of episodes for each genre
 |Gattungslabel_ED_normalisiert|Count|Proportion         |
 |-----------------------------|-----|-------------------|
-|Erzählung                    |360  |0.0920951650038373 |
-|Kolportage                   |563  |0.14402660526989   |
-|Märchen (fairy tale)         |2    |0.0005116398055768739|
-|Novelle                      |565  |0.14453824507546686|
-|Roman (novel)                |201  |0.051419800460475826|
-|Rubrik: Erzählungen und Novellen|2077 |0.5313379380915835 |
-|other journal content        |11   |0.0028140189306728063|
-|other prose fiction          |130  |0.0332565873624968 |
-|Total                        |3909 |1.0                |
+|Erzählung                    |360  |0.092% |
+|Kolportage                   |563  |0.144%   |
+|Märchen (fairy tale)         |2    |0.00055|
+|Novelle                      |565  |0.144%|
+|Roman (novel)                |201  |0.051%|
+|Rubrik: Erzählungen und Novellen|2077 |0.531% |
+|other journal content        |11   |0.003%|
+|other prose fiction          |130  |0.033% |
+|Total                        |3909 |                |
 
 ### Further aspects of Balance
 
@@ -203,9 +203,9 @@ Table 4 shows the balance of authors gender in the corpus.
 Table 4: Gender
 |Gender |distrubtion of Gender|distribution of Gender (relative share)|
 |-------|---------------------|---------------------------------------|
-|Male   |843                  |0.6842532467532467                     |
-|Female |229                  |0.1858766233766234                     |
-|unknown|160                  |0.12987012987012986                    |
+|Male   |843                  |0.684%                     |
+|Female |229                  |0.185%                     |
+|unknown|160                  |0.129%                    |
 
 
 
@@ -215,10 +215,10 @@ Table 4 shows the balance regarding the status of canonicity in the corpus.
 Table 4: Canonicity
 |Kanon_Status|distrubtion of Kanon_Status|distribution of Kanon_Status (relative share)|
 |------------|---------------------------|---------------------------------------------|
-|very low    |862                        |0.6814229249011857                           |
-|low         |155                        |0.1225296442687747                           |
-|mid         |151                        |0.11936758893280633                          |
-|high        |97                         |0.0766798418972332                           |
+|very low    |862                        |0.681%                           |
+|low         |155                        |0.122%                           |
+|mid         |151                        |0.119%                          |
+|high        |97                         |0.076%                           |
 
 
 # Usage: CLI
