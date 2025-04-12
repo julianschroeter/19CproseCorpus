@@ -159,7 +159,7 @@ plt.show()
 
 dtm_obj = DocFeatureMatrix(data_matrix_filepath=infile_name, metadata_csv_filepath= metadata_filepath) # combine corpus with metadata information using the DocFEatureMatrix class and its methods
 
-rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "Gender", "Kanon_Status"]
+rel_metadata = ["Gattungslabel_ED_normalisiert", "Jahr_ED", "Medientyp_ED", "Gender", "Kanon_Status", "seriell"]
 
 
 dtm_obj = dtm_obj.add_metadata(rel_metadata)
@@ -191,8 +191,14 @@ replace_dict = {"Kanon_Status": {0: "very low", 1: "low", 2: "mid", 3:"high"}}
 df = full_genre_labels(df, replace_dict=replace_dict)
 
 
+replace_dict = {"seriell": {"True": "Serie", "TRUE": "Serie", "vermutlich": "Serie", "(unbekannt)":"unbekannt",
+                                                  "False": "nicht-seriell", "FALSE":"nicht-seriell"}}
+
+
+df = full_genre_labels(df, replace_dict=replace_dict)
+
 metadata_dfs = []
-rel_metadata = ["Gender", "Kanon_Status"]
+rel_metadata = ["Gender", "Kanon_Status", "seriell"]
 for metadata in rel_metadata:
     column0 = str("distrubtion of " + metadata)
     column1 = str("distribution of "+ metadata + " (relative share)")
@@ -203,9 +209,12 @@ for metadata in rel_metadata:
 
 gender_df = metadata_dfs[0]
 canon_df = metadata_dfs[1]
+seriell_df =metadata_dfs[2]
+
 
 gender_df.to_csv(os.path.join(tables_path, "corpus_gender_distribution.csv"))
 canon_df.to_csv(os.path.join(tables_path, "corpus_canonicity_distribution.csv"))
+seriell_df.to_csv(os.path.join(tables_path, "corpus_serial_bool_distribution.csv"))
 
 fig, ax = plt.subplots(figsize=(12,8))
 df = gender_df.copy()
