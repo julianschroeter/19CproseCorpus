@@ -1,14 +1,12 @@
 # 19CproseCorpus
 ## General remarks
-This repository contains the `19CproseCorpus`, a collection of 19th century narrative prose and novellas that provides balanced samples of serially and non-serially published texts from all major contemporary media formats.  
+This repository contains the `19CproseCorpus`, a collection of currently 1236 (April 2025) 19th-century works of narrative prose fiction including 3894 episodes. The corpus provides balanced samples of serially and non-serially published texts from all major contemporary media formats.  
 The repository provides: 
-- A description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures` folder).
-All figures can be reproduced based on the python scripts in the `code` folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
-The output_explore_corpus.txt file in the data folder records the actual output of the script ´explore_corpus.py` (date: XX.03.2025).
-- Python scripts allowing for an exploratory overview of the corpus (in the `code` folder. The scripts use functions and classes from the ´preprocessing´ module. 
+- A description of the corpus (see section on `Corpus description` in this file below and additional visualizations and tables in the `figures` and `tables` folders).
+All figures, tabels, and restuts can be reproduced based on the python scripts (explore_corpus.py on the level of whole works and explore_episodes_corpus.py on the level episodes) in the `code` folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
 For using the scripts see section on `Usage` below. 
-- Document-term matrices `dtm` of the corpus according to different corpus releases (in the `data/dtm` folder). 
-- A metadata table including a wide range of media-historical context (`Bibliographie.csv`). 
+- A Document-term matricx `dtm` of the corpus according to different corpus releases (in the `data` folder). 
+- A metadata table including a wide range of media-historical context (`Bibliographie.tsv`). 
 
 
 
@@ -137,44 +135,44 @@ The exact criteria are described below.
 The composition of the corpus regarding the size and proportions of the samples regarding the essential categories of genre, seriality, and mediality are 
 shown in tables X-X:
 
-![Basic_corpus_characteristcs](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Genres_and_Periods.svg)
-
+The corpus can be accessed on two levels, the level of whole works and the level of episodes. 
+### Level of works
+The following figures show the corpus composition on the level of whole works. 
 Figure 1 shows the subsample sizes for each media format across subperiods, with the main periods from 1820–1850 and 1850–1880.
 
-![](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Media_types_and_Periods.svg "Media Types")
+![Figure 1](https://github.com/julianschroeter/19CproseCorpus/blob/main/figures/pie_chart_corpus_size_genre.svg)
 
 Figure 1
 
 Figure 2 shows the sumsample sizes for serially and non-serially published prose fiction across subperiods as in Figure 1.
 
-(Figure 2 to come)
+![Figure 2](https://github.com/julianschroeter/19CproseCorpus/blob/main/figures/pie_chart_corpus_size_media_formats.svg)
+Figure 2
 
-
-Figure 3 shows the subsample sizes for each genre across subperiods as in Figure 1.
-![](/home/julian/git/19CproseCorpus/figures/en_Corpus_Size_for_Genres_and_Periods.svg "Numbers of works for genres and subperiods")
-
-
+Figure 3 shows the subsample sizes for each genre across subperiods.
+![Figure 3](https://github.com/julianschroeter/19CproseCorpus/blob/main/figures/en_Corpus_Size_for_Genres_and_Periods.svg)"
 Figure 3
 
-Table 4 shows the balance of authors gender in the corpus.
-![corpus_characteristic_gender](https://github.com/user-attachments/assets/ea5b666b-2703-476d-8f18-f776ddc23371)
+Figure 4 shows the subsample sizes for each media type across subperiods as in Figure 3.
+![Figure 4](https://github.com/julianschroeter/19CproseCorpus/blob/main/figures/en_Corpus_Size_for_Media_types_and_Periods.svg)"
+Figure 3
 
+### Level of episodes
+Figures 5 and 6 show the corpus composition on the level of episodes.
 
-Table 5 shows the balance regarding the status of canonicity in the corpus.
+Table 1 
+|seriality|number|relative share|
+|-------|----------------------|----------------------------------------|
+|non-serial|698                   |0.5517786561264822                      |
+|serial  |563                   |0.4450592885375494                      |
+|as episodes in the corpus|421 out of 563   |-   |
+|unknown|4                     |                   |
 
+The corpus is thus balanced between texts that were published serially and non-serially.
 
-Table 5: Canonicity
+The 421 texts that are collected as episodes distributed over the different media formats and yield a total number as shown in Table 2:
 
-|canon status| absolute | relative | estimated population |
-|:-:|---|---|---|
-|0 (not part of the canon)| 452 | 0.66 | > 0.85 |
-|1  (weakly canonized) | 71 |0.1 | ––– |
-|2 (medium) | 83 | 0.12 | –––|
-|3 (high canon) | 81 | 0,12 |–––|
-
-
-# Level of Episodes
-
+Table 2
 |Medientyp_ED |Count    |Proportion|
 |-------------|---------|----------|
 |Familienblatt|3261     |0.836%    |
@@ -182,9 +180,53 @@ Table 5: Canonicity
 |Kolportage   |563      |0.144%    |
 |**Total**    |**3894** |          |
 
+The total of 3894 spreads across the different genres as shown in Figure 5 and table 3:
+
+![Figure 5](https://github.com/julianschroeter/19CproseCorpus/blob/main/figures/en_episodes_Corpus_Size_for_Genres_and_Periods.svg)
+
+Table 3: The numbers of episodes for each genre
+|Gattungslabel_ED_normalisiert|Count|Proportion         |
+|-----------------------------|-----|-------------------|
+|Erzählung                    |360  |0.0920951650038373 |
+|Kolportage                   |563  |0.14402660526989   |
+|Märchen (fairy tale)         |2    |0.0005116398055768739|
+|Novelle                      |565  |0.14453824507546686|
+|Roman (novel)                |201  |0.051419800460475826|
+|Rubrik: Erzählungen und Novellen|2077 |0.5313379380915835 |
+|other journal content        |11   |0.0028140189306728063|
+|other prose fiction          |130  |0.0332565873624968 |
+|Total                        |3909 |1.0                |
+
+### Further aspects of Balance
+
+Table 4 shows the balance of authors gender in the corpus.
+Table 4: Gender
+|Gender |distrubtion of Gender|distribution of Gender (relative share)|
+|-------|---------------------|---------------------------------------|
+|Male   |843                  |0.6842532467532467                     |
+|Female |229                  |0.1858766233766234                     |
+|unknown|160                  |0.12987012987012986                    |
+
+
+
+Table 4 shows the balance regarding the status of canonicity in the corpus.
+
+
+Table 4: Canonicity
+|Kanon_Status|distrubtion of Kanon_Status|distribution of Kanon_Status (relative share)|
+|------------|---------------------------|---------------------------------------------|
+|very low    |862                        |0.6814229249011857                           |
+|low         |155                        |0.1225296442687747                           |
+|mid         |151                        |0.11936758893280633                          |
+|high        |97                         |0.0766798418972332                           |
+
 
 # Usage: CLI
-Here are the instructions for the CLI. (under construction).
+- Download the repository in a pip or conda envirnment according to the 'requirements.txt'
+- Adjust the filepaths in the scripts `explore_corpus.py` and `explore_episodes_corpus.py`.
+- Make sure the data are in the right folders.
+- Run the scripts. 
+
 
 # References 
 
