@@ -222,7 +222,7 @@ Table 4: Canonicity
 
 
 # Usage: CLI
-- Download the repository in a pip or conda envirnment according to the 'requirements.txt'
+- Download the repository in a pip or conda environment according to the 'requirements.txt' (with pip) or `conda env create -f environment.yml` and `conda activate 19prose`. 
 - Adjust the filepaths in the scripts `explore_corpus.py` and `explore_episodes_corpus.py`.
 - Make sure the data are in the right folders.
 - Run the scripts. 
