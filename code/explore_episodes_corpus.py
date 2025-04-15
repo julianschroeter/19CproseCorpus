@@ -1,19 +1,16 @@
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+import pathlib
 
-# Use these lines with your project path in case of error message "No module named 'preprocessing.corpus'"
-# import sys
-# sys.path.insert(1, <your_project_path>)
+# Define path for preprocessing import
+import sys
+sys.path.insert(1, str(pathlib.Path().resolve()))
 
-from preprocessing.corpus import DocFeatureMatrix
-from preprocessing.presetting import global_corpus_representation_directory, vocab_lists_dicts_directory, load_stoplist, \
-    global_corpus_raw_dtm_directory, local_temp_directory
 from preprocessing.metadata_transformation import full_genre_labels, years_to_periods
 
-
-# set your lokal path to your 19CproseCorpus path
-project_path = '/home/julian/git/19CproseCorpus'
+# set lokal path to 19CproseCorpus repository
+project_path = pathlib.Path().resolve()
 
 figures_path = os.path.join(project_path,"figures" )
 data_path = os.path.join(project_path,"data" )
