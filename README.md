@@ -6,7 +6,7 @@ The repository provides:
 All figures, tabels, and restuts can be reproduced based on the python scripts (explore_corpus.py on the level of whole works and explore_episodes_corpus.py on the level episodes) in the `code` folder provide a picture of the structure of the corpus with regard to the distribution of genres and media types over time.
 For using the scripts see section on `Usage` below. 
 - A Document-term matricx `dtm` of the corpus according to different corpus releases (in the `data` folder). 
-- A metadata table including a wide range of media-historical context (`Bibliographie.tsv`). 
+- A metadata table including a wide range of media-historical context (`Bibliographie.tsv`). [Please note that the metadata table currently contains incorrect entries (e.g. in the column Kanon_Status), which will be corrected manually by July 2025]. 
 
 
 
