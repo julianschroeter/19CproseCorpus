@@ -33,8 +33,8 @@ The corpus includes information concerning genre, medial history and seriality.
 The corpus design meets criteria of balance and representativeness according to Biber et al. 1998, Wynne 2014, Percillier 2017, and Schöch 2017). 
 It covers: 
 1. Balanced samples of canonized texts as well as non-canonical works, 
-2. Balanced samples of works that were serially and wroks that were non-serially published. 
-3. Balanced samples of the main subperiods: 1820–1850 and 1850–1880; sufficiently large samples for the marginal subperiods 1790–1820 and 1880–1940.
+2. Balanced samples of works that were serially and works that were non-serially published. 
+3. Balanced samples of the main subperiods: 1820–1850 and 1850–1880; sufficiently large samples for the marginal subperiods 1790–1820 and 1880–1910, including a small number of texts that were produced in the years before 1790 or after 1910 that are excluded for most of the analytical tasks.
 4. Balanced samples of historical prose genres: The corpus meets – besides the requirements of balance and representativeness – an important further requirement that was developed in Schröter (2019), 
 namely that genre assignments shall be representative of the historical situation in the media market. This entails that each text can have different genre assignments in different historical situations. Based on this structure of metadata collection, semantic change of genre concepts as well as historical processes of canonization can be investigated. 
 
@@ -164,8 +164,8 @@ Table 1
 |seriality|number|relative share|
 |-------|----------------------|----------------------------------------|
 |non-serial|698                   |0.551%                 |
-|serial  |563                   |0.445%                      |
-|as episodes in the corpus|421 out of 563   |-   |
+|serial  |534                   |0.445%                      |
+|as episodes in the corpus|421 out of 534   |-   |
 |unknown|4                     |  -                 |
 
 The corpus is thus balanced between texts that were published serially and non-serially.
